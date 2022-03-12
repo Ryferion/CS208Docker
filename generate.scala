@@ -2,7 +2,7 @@ import spark.sql
 import spark.implicits._
 
 
-val inputFile = sc.textFile("/test-files/num.txt")
+val inputFile = sc.textFile("/test-files/dups.txt")
 val sqlContext = new org.apache.spark.sql.SQLContext(sc)
 
 case class dup(name: String, value: Int)
